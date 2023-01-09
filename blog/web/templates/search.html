@@ -1,0 +1,17 @@
+
+{% extends 'base.html'%}
+
+{% block title%}
+search
+{% endblock%}
+{% block content%}
+<form method="post" action="{{ url_for('search')}}" class="d-flex">
+  <input class="form-controlme-2" type="seach" placeholder="Search.." name="searched">
+  <button class="btn" type="submit">search<i class="fa fa-search"></i></button>
+</form>
+{% endblock %}
+
+<!-- <form action="/search">
+        <input autocomplete="off" autofocus id="srch" name="srch" placeholder="Enter Text....">
+        <input type="submit">
+    </form> -->
